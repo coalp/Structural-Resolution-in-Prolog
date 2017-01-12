@@ -21,7 +21,6 @@ They should be normal Prolog programs that are commonly seen in Prolog text book
 
 ### Running the code
 
-The code for meta-interpreter is not encapsulated in a module. You can copy your input program files into the same directory as the source 
-code of the meta-interpreter.     
+The code for meta-interpreter is not encapsulated in a module. You can copy your input program files into the same directory as the source code of the meta-interpreter. In the folder [test input programs]('test input programs')    
 
 (To be continued)
