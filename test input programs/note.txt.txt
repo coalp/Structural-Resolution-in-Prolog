@@ -1,0 +1,28 @@
+
+
+Test Notes:
+
+%  S-resolution's non-termination behaviour for program marriage_loop.pl. 
+     S-resolution gets into infinite loop for some query. See marriage_loop.pl source file for detail.
+    
+     Similar behaviour is observed with p_rec2.pl.
+
+% implementation of both S-resolution and SLD doesn't terminate for numeral(X) with numeral2.pl where 
+    numbers are represented by 0 and successor funtion and the inductive rule is placed before the base fact.
+
+% natural numbers defined with successor function could be denumerated by S-resolution, while 
+    natural numbers defined by arithmetic numbers can't be due to inference mechanism. SLD resolution 
+    can denumerate in both of the above cases. a successsful attempt was made to devise a natural number
+    generator suitable for execution with S-resolution. See arithmatic_nat_for_s_reso.pl
+
+% When I tried to test with lexicon_parse_tree.pl and print_english_parse_tree.pl, which shall be consulted
+    together, I tried to make these files into modules. But under the module setting the meta-interpreter was confused
+    by namespace labels. I then kept the meta-interpreter as a module and stopped letting the test files be module.
+    I manually consulted the meta-interpreter module and then manually loaded the  test files. This time it worked fine. 
+ 
+    The input file for the meta-intepreter should not be made a module otherwise the interpreter is likely to has problem 
+    access the predicates in a right form. 
+   
+    
+
+
