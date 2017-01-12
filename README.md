@@ -22,7 +22,7 @@ They should be normal Prolog programs that are commonly seen in Prolog text book
 
 ### Understanding Files in This Repository
 
-* [term_matching_vanilla.pl](term_matching_vanilla.pl) is meta-interpreter for term matching resolution, i.e. SLD resolution where the search rule only selects a clause if its head subsumes the select goal predicate.
+* [term_matching_vanilla.pl](term_matching_vanilla.pl) is meta-interpreter for term matching resolution, i.e. SLD resolution where the search rule only selects a clause if its head subsumes the selected goal predicate.
 * [matching_first_vanilla.pl](matching_first_vanilla.pl) is meta-interpreter for SLD resolution with the search rule that clauses whose head subsumes the selected goal is chosen in precedence to those whose head unifies with but does not subsume the selected goal predicate.
 * [vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) is meta-interpreter for structural resolution.
 * [test input programs](test input programs/) provides many input Prolog programs that were used to test the structural resolution meta-interpreter. 
@@ -33,8 +33,8 @@ The code for meta-interpreter is not encapsulated in a module. You can copy your
 
 #### Example Run 1: Vanilla for Structural Resolution
 
-* Reparation: make sure your own input program and the [vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) file is put under the same directory. We use 
+* Reparation: make sure your own input program and the [vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) file is put under the same directory. We use [numeral.pl](numeral.pl) in this example.
 
-1. 
+1. Load `numeral.pl` and `vanilla_for_structural_resolution.pl` to SWI-Prolog interactve interpreter. For instance, on your PC, you may double click to open [vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) then type `?- [numeral].` to load the `numeral.pl` file.
 
 (To be continued)
