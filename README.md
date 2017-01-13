@@ -1,5 +1,4 @@
-# Structural Resolution in Prolog
-
+# Structural Resolution in Prolo
 This repository hosts an implementation of structural resolution written in Prolog in the form of a meta-interpreter. A report about this implementation is [here](http://www.macs.hw.ac.uk/~yl55/CoALP_Report_Dec16.pdf), which presents comparative study of search strategies for term-matching and unification based resolution in Prolog. 
 
 ### Understanding Files in This Repository
@@ -8,7 +7,6 @@ This repository hosts an implementation of structural resolution written in Prol
 * [matching_first_vanilla.pl](matching_first_vanilla.pl) is meta-interpreter for SLD resolution with the search rule that clauses whose head subsumes the selected goal is chosen in precedence to those whose head unifies with but does not subsume the selected goal predicate.
 * [vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) is meta-interpreter for structural resolution.
 * [numeral.pl](numeral.pl) and [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl) are provided as two example object programs for the structural resolution meta-interpreter. More details on using these two examples come later in this document. 
-
 
 ## How to use
 
@@ -47,9 +45,7 @@ We use [numeral.pl](numeral.pl) in this example.
 
 #### Example Run 2: Vanilla for Structural Resolution
 
-We use the structural resolution interpreter to generate sentences of the formal language a^n b^{2m} c^{2m} d^n. 
-
-The file [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl) is a Prolog program that does this work on its own: repeatedly, it generates a natural number N, then enumerates through all pairs (A,B) such that A+B=N. For each pair (A,B)    there is a list of characters `a...a b...b c...c d...d` that contains a and d for exactly A times and  b and c for B times.
+We consider [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl), which is a Prolog program that generates sentences of the formal language a^n b^{2m} c^{2m} d^n.  Repeatedly, it generates a natural number N, then enumerates through all pairs (A,B) such that A+B=N. For each pair (A,B)    there is a list of characters `a...a b...b c...c d...d` that contains a and d for exactly A times and  b and c for B times.
 
 For example, simply double click to   open `a_nb_2mc_2md_n.pl` on your computer, the SWI-Prolog interpreter would start. Then you give the query `?- s(A).`
 and the answers would be:
@@ -62,7 +58,7 @@ and the answers would be:
     ...
    
 Now we solve the goal`?- s(A).` by structural resolution. To do this you put both [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl) and   
-[vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) in the same directory on your computer, load them both to SWI-Prolog, and pose the query`?-clause_tree(s(X)).` 
+[vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) in the same directory on your computer, load them both to SWI-Prolog, for instance, by double clicking to open `vanilla_for_structural_resolution.pl` then typing `?- [a_nb_2mc_2md_n].` to load the `a_nb_2mc_2md_n.pl` file. You pose the query`?-clause_tree(s(X)).` 
 
 #### Example Run 3: Term-Matching Vanilla
 
