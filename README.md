@@ -31,7 +31,7 @@ The reason for the above requirement are explained in the [report](http://www.ma
 
 When you use your own input programs, you should copy them into the same directory as the source code of the meta-interpreters. [Here](http://www.swi-prolog.org/pldoc/man?section=quickstart) is SWI-Prolog's guide to load source files. 
 
-We see example run of meta-interpreters using input files provided in this repository. Before you start, make sure you have met the system requirement mentioned ealier and have got a local copy of the repository on your own computer. 
+We see example run of meta-interpreters using input files provided in this repository. Before you start, make sure you have met the system requirement mentioned earlier and have got a local copy of the repository on your own computer. 
 
 #### Example 1: Vanilla for Structural Resolution
 
