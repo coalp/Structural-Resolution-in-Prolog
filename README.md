@@ -59,9 +59,17 @@ and the answers would be:
     ...
    
 Now we solve the goal`?- s(A).` by structural resolution. To do this you put both [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl) and   
-[vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) in the same directory on your computer, load them both to SWI-Prolog, for instance, by double clicking to open `vanilla_for_structural_resolution.pl` then typing `?- [a_nb_2mc_2md_n].` to load the `a_nb_2mc_2md_n.pl` file. You pose the query`?-clause_tree(s(X)).` 
+[vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) in the same directory on your computer, load them both to SWI-Prolog, for instance, by double clicking to open `vanilla_for_structural_resolution.pl` then typing `?- [a_nb_2mc_2md_n].` to load the `a_nb_2mc_2md_n.pl` file. You pose the query`?-clause_tree(s(A)).` 
 
 #### Example Run 3: Term-Matching Vanilla
 
-It is written in continuation style so it requires that 
+It is written in continuation style so it requires that input programs are written in special form. See [term_matching_vanilla.pl](term_matching_vanilla.pl) for example input (object) programs. 
+
+Two example input programs for term-matching vanilla are provided in the same file as the meta-interpreter. To run the meta-interpreter over these two exampless, simply double click `term_matching_vanilla.pl` on your computer, the SWI-Prolog interpreter will start, and you try the queries
+
+        ?- solve(related(abraham,issac).
+        ?- solve(related(abraham,X).
+        ?- solve(member(1,[1,2,3])).
+        ?- solve(member(a,[a,b,c])).
+        
 (To be continued)
