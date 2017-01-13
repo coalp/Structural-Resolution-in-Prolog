@@ -1,4 +1,5 @@
-# Structural Resolution in Prolo
+# Structural Resolution in Prolog
+
 This repository hosts an implementation of structural resolution written in Prolog in the form of a meta-interpreter. A report about this implementation is [here](http://www.macs.hw.ac.uk/~yl55/CoALP_Report_Dec16.pdf), which presents comparative study of search strategies for term-matching and unification based resolution in Prolog. 
 
 ### Understanding Files in This Repository
