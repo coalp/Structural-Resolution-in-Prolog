@@ -35,7 +35,7 @@ The code for meta-interpreter is not encapsulated in a module. You can copy your
 
 Reparation: make sure your own input program and the [vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) file is put under the same directory. We use [numeral.pl](test input programs/numeral.pl) in this example.
 
-1. Load `numeral.pl` and `vanilla_for_structural_resolution.pl` to SWI-Prolog interactve interpreter. For instance, on your PC, you may double click to open [vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) then type `?- [numeral].` to load the `numeral.pl` file.
+1. Load `numeral.pl` and `vanilla_for_structural_resolution.pl` to SWI-Prolog interactve interpreter. For instance, on your PC, you may double click to open `vanilla_for_structural_resolution.pl` then type `?- [numeral].` to load the `numeral.pl` file.
 
 2. The entry predicate for the meta-interpreter is `clause_tree/1`, which you invoke with a goal that is related to the object (input) program as its argument. For instance: the query `?-clause_tree(numeral(X)).` will generate peano numbers. 
 
