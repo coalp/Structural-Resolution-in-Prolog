@@ -5,7 +5,7 @@ This repository hosts an implementation of structural resolution written in Prol
 
 * [term_matching_vanilla.pl](term_matching_vanilla.pl) is meta-interpreter for term matching resolution, i.e. SLD resolution where the search rule only selects a clause if its head subsumes the selected goal predicate. 
 * [matching_first_vanilla.pl](matching_first_vanilla.pl) is meta-interpreter for SLD resolution with the search rule that clauses whose head subsumes the selected goal is chosen in precedence to those whose head unifies with but does not subsume the selected goal predicate.
-* [vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) is meta-interpreter for structural resolution.
+* [vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) is meta-interpreter for structural resolution. It comes from modifying the matching-first vanilla, which in turn comes from modifying term-matching vanilla. 
 * [numeral.pl](numeral.pl) and [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl) are provided as two example object programs for the structural resolution meta-interpreter. More details on using these two examples come later in this document. 
 
 ## How to use
