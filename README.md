@@ -47,7 +47,9 @@ We use [numeral.pl](numeral.pl) in this example.
 
 #### Example Run 2: Vanilla for Structural Resolution
 
-We use the structural resolution interpreter to generate sentences of the formal language a^n b^{2m} c^{2m} d^n. The file [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl) is a working Prolog program that does this work. For example, simply double click to open `a_nb_2mc_2md_n.pl` on your PC, the SWI-Prolog interpreter would start. Then you give the query `?- s(A).`
+1. We use the structural resolution interpreter to generate sentences of the formal language a^n b^{2m} c^{2m} d^n. 
+
+2. The file [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl) is a working Prolog program that does this work. For example, simply double click to   open `a_nb_2mc_2md_n.pl` on your computer, the SWI-Prolog interpreter would start. Then you give the query `?- s(A).`
 and the answers would be:
 
     A = [] ;    
@@ -59,8 +61,8 @@ and the answers would be:
 
 The program works by generating a natural number N, then enumerating through all pairs (A,B) such that A+B=N. For each pair (A,B) there is a list of characters `a...a b...b c...c d...d` that contains a and d for exactly A times and  b and c for B times.
 
-You could try to solve the goal`?- s(A).` by structural resolution. To do this you put both [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl) and   
-[vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) in the same directory on your PC, load them both to SWI-Prolog, and pose the query`?-clause_tree(s(X)).` 
+3. Now we solve the goal`?- s(A).` by structural resolution. To do this you put both [a_nb_2mc_2md_n.pl](a_nb_2mc_2md_n.pl) and   
+[vanilla_for_structural_resolution.pl](vanilla_for_structural_resolution.pl) in the same directory on your computer, load them both to SWI-Prolog, and pose the query`?-clause_tree(s(X)).` 
 
 #### Example Run 3: Term-Matching Vanilla
 
