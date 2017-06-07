@@ -21,7 +21,7 @@ solve(A,Goals) :-
           unifying_but_matching_rule(A, Body),
           solve(Body, Goals).
 
-% choose clauses whose heads unifies with the goal, and specificly,
+% choose clauses whose heads unifies with the goal, and specifically,
 % matches the goal.
 unifying_and_matching_rule(A, Body) :-
        copy_term(A,A_copy),         % Note 2
@@ -30,9 +30,9 @@ unifying_and_matching_rule(A, Body) :-
        subsumes_term(A1,A),         % Note 5
        rule(A,Body,Ref).            % Note 6
 
-% choose clauses whose head unifies with the goal, and specificly,
+% choose clauses whose head unifies with the goal, and specifically,
 % does not match the goal
-unifying_but_matching_rule(A, Body) :-
+unifying_not_matching_rule(A, Body) :-
       copy_term(A,A_copy),
       rule(A_copy,_,Ref),
       rule(A1,_,Ref),
