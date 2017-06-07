@@ -18,7 +18,7 @@ solve(A,Goals) :-
           unifying_and_matching_rule(A, Body),
           solve(Body, Goals).
 solve(A,Goals) :-
-          unifying_but_matching_rule(A, Body),
+          unifying_not_matching_rule(A, Body),
           solve(Body, Goals).
 
 % choose clauses whose heads unifies with the goal, and specifically,
