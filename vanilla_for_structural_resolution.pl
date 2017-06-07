@@ -14,7 +14,7 @@ clause_tree(A) :-                     % rewriting reduction
             unifying_and_matching_rule(A, Body),
             clause_tree(Body).
 clause_tree(A) :-                     % substitution reduction.
-            unifying_but_matching_rule(A, _),        % Note 1
+            unifying_not_matching_rule(A, _),        % Note 1
             clause_tree(A).                          % Note 1
 
 
@@ -25,7 +25,7 @@ unifying_and_matching_rule(A, Body) :-
          subsumes_term(A1,A),
          clause(A,Body,Ref).
 
-unifying_but_matching_rule(A, Body) :-
+unifying_not_matching_rule(A, Body) :-
         copy_term(A,A_copy),
         clause(A_copy,_,Ref),
         clause(A1,_,Ref),
